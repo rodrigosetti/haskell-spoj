@@ -1,5 +1,6 @@
-*.hi
-*.o
-*.orig
-*.swp
+*
+!.gitignore
+!*.hs
+!Makefile
+!README
 
