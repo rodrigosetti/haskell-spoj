@@ -7,7 +7,7 @@ main = do tests <- getLine
 
 -- | The 'factorialTrailingZeros' gives the amount of traiing zeros of the n!
 --   using Polignac's Formula: the multiplicity of the prime factor 5 in n!
-factorialTrailingZeros :: Integer -> Integer
+factorialTrailingZeros :: Integral a => a -> a
 factorialTrailingZeros n = sum $ takeWhile (>0) $ nestList (`div` 5) (n `div` 5)
 
 -- | The 'nestList' function takes a function and an atom, and returns
